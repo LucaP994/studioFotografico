@@ -1,0 +1,79 @@
+@import "../variables.scss";
+
+.main-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/images/bg.jpeg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $font-color;
+}
+.presentation {
+    width: 100%;
+}
+
+.presentation-desc {
+    opacity: 0;
+    width: 40%;
+    top: 100%;
+    left: 2rem;
+    text-align: center;
+    position: absolute;
+    backdrop-filter: blur(2px);
+    background-color: #37373728;
+    color: $font-color;
+    padding: 3rem 3.5rem;
+    border-radius: 5px;
+    //box-shadow: 5px 5px 15px #ca2b901d;
+    transition: all 1s;
+}
+
+.presentation-desc h2 {
+    margin-bottom: 1rem;
+}
+.scroll-top {
+    position: fixed;
+    display: inline;
+    bottom: 4rem;
+    right: -5rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: $violet;
+    z-index: 1000;
+    border: none;
+    color: $background;
+    filter: brightness(1);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.scroll-top:hover {
+    filter: brightness(1.5);
+
+    // width: 2.85rem;
+    // height: 2.85rem;
+
+}
+@media screen and (max-width: 850px) {
+    .scroll-top {
+        bottom: 10rem;
+    }
+
+    .presentation {
+        width: 80%;
+    }
+
+    .presentation-desc {
+        left: 0;
+        top: 50%;
+        width: 100%;
+        padding: 3rem 0;
+    }
+    .slider h2 {
+        font-size: 120px;
+    }
+}

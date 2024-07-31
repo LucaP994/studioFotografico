@@ -1,0 +1,29 @@
+<section name="contatti" class="section-box lato-regular tag contatti-tag">
+    <h4 class="section-head lato-regular yellow">CONTATTAMI</h4>
+    <h2 class="section-subtitle">CONTATTAMI</h2>
+    <div class="mail">
+        <div class="fields">
+            <input type="text" class="form-control lato-regular" [formControl]="nome" placeholder="Nome..."
+                aria-label="Nome" required>
+            <input type="text" class="form-control lato-regular" [formControl]="email" placeholder="Email..."
+                aria-label="Email" required>
+            <input type="text" class="form-control lato-regular" [formControl]="oggetto" placeholder="Oggetto..."
+                required aria-label="Oggetto">
+            <textarea class="form-control lato-regular" [formControl]="messaggio" placeholder="Messaggio..." required
+                aria-label="Messaggio" required></textarea>
+        </div>
+        <p class="lato-regular obb">Tutti i campi sono obbligatori</p>
+        <div>
+            <div class="autorizzazione">
+                <input type="checkbox" name="autorizzazione-dati" [(ngModel)]="autorizzazioneDati" id="">
+                <label for="autorizzazione-dati">Acconsento al trattamento dei miei dati personali ai sensi della <a href="./privacy.html" target="_blank">Privacy Policy</a>.</label>
+            </div>
+        </div>
+        <button id="inviaMsg" *ngIf="nome.valid && email.valid && messaggio.valid && autorizzazioneDati; else disabled"
+            class="button lato-bold" (click)="inviaMessaggio()">Invia messaggio</button>
+        <ng-template #disabled>
+            <button class="button lato-bold" (click)="sendAlert()">Invia messaggio</button>
+        </ng-template>
+        <app-popup></app-popup>
+    </div>
+</section>

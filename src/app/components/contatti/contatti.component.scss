@@ -1,0 +1,63 @@
+@import "../../../variables.scss";
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+.mail .obb{
+    font-size: 10px;
+    text-align: end;
+}
+
+.mail {
+    text-align: start;
+    position: relative;
+    padding-top: 2rem;
+    width: 50%;
+    //background-color: #0000001b;
+}
+
+.mail div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+.form-control{
+    width: -webkit-fill-available;
+    font-size: 16px;
+    //line-height: 35px;
+    border-radius: 5px;
+    padding: 1rem;
+    border: 1px solid $border;
+    background-color: #ffffff0c;
+    margin: 0.5rem 0;
+    color: $font-color;
+}
+.button{
+    margin-top: 1rem;
+}
+.autorizzazione label{
+    font-size: 8px;
+}
+.autorizzazione input{
+    background-color: #ffffff0c;
+    margin-right: 5px;
+}
+.autorizzazione a{
+    color: $violet;
+}
+@media screen and (max-width: 850px) {
+    .mail{
+        width: 90%;
+    }
+}

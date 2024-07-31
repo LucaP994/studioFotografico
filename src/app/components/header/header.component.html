@@ -1,0 +1,49 @@
+<header class="header">
+    <div class="header-logo" (click)="scrollTop()">
+        <h1 class="jost-bold">Logo</h1>
+    </div>
+    <div class="links jost-regular">
+        <div class="link-box" (click)="goTo($event,'home')" >
+            <p class="nav-link active">Home</p>
+        </div>
+        <div class="link-box" (click)="goTo($event,'specs')">
+            <p class="nav-link">Specialità</p>
+        </div>
+        <div class="link-box" (click)="goTo($event,'ultimi-scatti')">
+            <p class="nav-link">Ultimi scatti</p>
+        </div>
+        <div class="link-box" (click)="goTo($event,'chi_sono')">
+            <p class="nav-link">Chi Sono</p>
+        </div>
+        <div class="link-box" (click)="goTo($event,'contatti')">
+            <p class="nav-link">Contattami</p>
+        </div>
+    </div>
+    <div class="social-box">
+        <div class="social button-ig">
+            <div class="ig social-icon">
+                <a class="" href="https://www.instagram.com/noroykeys/" target="_blank"></a>
+            </div>
+        </div>
+        <div class="social button-tk">
+            <div class="tk social-icon">
+                <a class="" href="https://www.tiktok.com/@noroykeys" target="_blank"></a>
+            </div>
+        </div>
+        <div class="social button-yt">
+            <div class="yt social-icon">
+                <a class="" href="https://www.youtube.com/@NoroyKeys" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<header class="header-mobile">
+    <div class="logo">
+        <h1 class="jost-bold">Logo</h1>
+    </div>
+    <div class="menu-button" (click)="openMenu()">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </div>
+</header>
