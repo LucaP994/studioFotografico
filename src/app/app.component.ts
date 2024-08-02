@@ -61,4 +61,8 @@ export class AppComponent {
     let body = document.querySelector("html")!;
     body.scrollTop = 0
   }
+  contattami(page: string){
+    this.scroller.scrollToAnchor(page);
+
+  }
 }
