@@ -6,11 +6,13 @@ import { ContextService } from './services/context.service';
 import { ViewportScroller } from '@angular/common';
 import { ChiSonoComponent } from './components/chi-sono/chi-sono.component';
 import { ContattiComponent } from './components/contatti/contatti.component';
+import { SpecialitaComponent } from './components/specialita/specialita.component';
+import { UltimiScattiComponent } from './components/ultimi-scatti/ultimi-scatti.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent,ChiSonoComponent,ContattiComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent,ChiSonoComponent,ContattiComponent, SpecialitaComponent, UltimiScattiComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

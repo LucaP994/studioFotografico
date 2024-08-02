@@ -1,0 +1,61 @@
+@import "../../../variables.scss";
+.specs-container{
+    position: relative;
+    height: fit-content ;
+}
+.specs-box{
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.spec1{
+    background: url("../../../assets/images/specs/wedding.jpg");
+}
+.spec2{
+    background: url("../../../assets/images/specs/nature.jpg");
+}
+.spec3{
+    background: url("../../../assets/images/specs/portrait.jpg");
+}
+.spec4{
+    background: url("../../../assets/images/specs/animal.jpg");
+}
+.specs{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 230px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease-in-out;
+    border-radius: 5px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.specs h3{
+    text-align: center;
+    width: 100%;
+    line-height: 2rem;
+    background-color: #00000071;
+}
+.specs:hover{
+    background-size: 120%;
+}
+@media screen and (min-width: 851px) and (max-width:1080px) {
+    .specs{
+        width: 280px;
+        height: 230px;;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .specs{
+        width: 280px;
+        height: 230px;;
+    }
+}

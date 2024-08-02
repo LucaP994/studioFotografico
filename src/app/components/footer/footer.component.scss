@@ -52,22 +52,47 @@ a {
     color: $violet;
 }
 
-.social i {
-    cursor: pointer;
-    transition: all 0.3s;
-    font-size: 2rem;
-}
+// .social i {
+//     cursor: pointer;
+//     transition: all 0.3s;
+//     font-size: 1.5rem;
+// }
 
-.social i:hover {
-    font-size: 2.5rem;
-    color: $violet;
-}
+// .social i:hover {
+//     font-size: 1.8rem;
+//     color: $violet;
+// }
 
 .copy {
     color: $font-color;
     font-size: 12px;
     margin-bottom: 1rem;
 }
+.social-box{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+// .social{
+//     width: 1.5rem;
+//     height: 1.5rem;
+//     background-color: $font-color;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border-radius: 5px;
+// }
+// .social-icon{
+//     width: 70%;
+//     height: 70%;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-clip: content-box;
+// }
 
 @media screen and (max-width: 850px) {
     .social {

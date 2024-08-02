@@ -199,14 +199,15 @@ body {
 }
 
 .section-head {
-    width: 300px;
+    //width: 100%;
     position: relative;
     font-size: 2rem;
     margin-bottom: 2rem;
-    text-align: center;
+    padding: 0 2rem;
+    text-align: start;
     letter-spacing: 1px;
     z-index: 10;
-    color: $red;
+    color: $font-color;
 }
 .section-subtitle {
     text-align: center;
@@ -232,7 +233,7 @@ body {
     padding: 4rem 0;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    //align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -257,35 +258,43 @@ body {
 
 
 
-.ig {
-    background: url("./assets/images/ig.png");
-}
+// .ig {
+//     background: url("./assets/images/ig.png");
+// }
 
-.yt {
-    background: url("./assets/images/yt.png");
-}
+// .yt {
+//     background: url("./assets/images/yt.png");
+// }
 
 
-.tk {
-    background: url("./assets/images/tk.png");
-}
+// .tk {
+//     background: url("./assets/images/tk.png");
+// }
 .social {
-    width: 2rem;
-    height: 2rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
     background: none !important;
+    //color: $font-color !important;
     //border: 1px solid $font-color;
     transition: all 0.2s ease-in-out;
 }
+.social i{
+    color: $font-color;
+    transition: all 0.2s ease-in-out;
 
-.social:has(a:hover) {
-    width: 2.3rem;
-    height: 2.3rem;
+    //transition: all 0.2s;
+
 }
-
+a:hover{
+    i{
+        font-size: 1.8rem;
+        color: $violet !important;
+    }
+    
+}
 .side-menu .social {
     width: 3rem;
     height: 3rem;
@@ -299,6 +308,7 @@ body {
     background-size: contain;
     background-clip: content-box;
 }
+
 @media screen and (max-width:850px) {
 
 
