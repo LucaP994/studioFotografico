@@ -13,6 +13,28 @@ body {
     background-color: $background;
     max-width: 100%;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f127;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $secondary-color;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $secondary-color;
+    filter: brightness(1.8);
+  }
 .jost-regular {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
@@ -121,7 +143,7 @@ body {
 }
 
 .logo span {
-    color: $violet;
+    color: $secondary-color;
 }
 
 
@@ -188,7 +210,7 @@ body {
 }
 .button {
     border: none;
-    background-color: $violet;
+    background-color: $secondary-color;
     color: $background;
     padding: 1rem 2rem;
     border-radius: 5px;
@@ -294,7 +316,7 @@ body {
 a:hover{
     i{
         font-size: 1.8rem;
-        color: $violet !important;
+        color: $secondary-color !important;
     }
     
 }

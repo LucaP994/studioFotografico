@@ -15,7 +15,7 @@
     text-align: start;
     position: relative;
     padding-top: 2rem;
-    width: 50%;
+    width: 45%;
     margin: auto;
     //background-color: #0000001b;
 }
@@ -25,7 +25,21 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.contatti-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contatti-box .contatti{
+    margin: auto;
+    width: 45%;
+}
+.contatti-box .contatti h3{
+    margin: 2rem 0;
+}
+.contatti .fas{
+    margin-right: 1.5rem;
+}
 .fields{
     display: flex;
     align-items: center;
@@ -55,10 +69,16 @@
     margin-right: 5px;
 }
 .autorizzazione a{
-    color: $violet;
+    color: $secondary-color;
 }
 @media screen and (max-width: 850px) {
     .mail{
         width: 90%;
+    }
+    .contatti-box{
+        flex-direction: column;
+    }
+    .contatti-box .contatti{
+        width: auto;
     }
 }

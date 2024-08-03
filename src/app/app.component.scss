@@ -15,13 +15,23 @@
 }
 .presentation {
     width: 100%;
+    height: 100%;
 }
-
+.title{
+    position: absolute;
+    top: 0;
+    right: 15%;
+    //transform: translate(-50%, 0);
+    font-size: 50px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
 .presentation-desc {
     opacity: 0;
     width: 40%;
-    top: 100%;
+    top: 50%;
     left: 2rem;
+    transform: translate(-100%, 0);
     text-align: center;
     position: absolute;
     backdrop-filter: blur(2px);
@@ -30,7 +40,7 @@
     padding: 3rem 3.5rem;
     border-radius: 5px;
     //box-shadow: 5px 5px 15px #ca2b901d;
-    transition: all 1s;
+    transition: all 1s ease-in-out;
 }
 
 .presentation-desc h2 {
@@ -43,7 +53,7 @@
     right: -5rem;
     width: 3rem;
     height: 3rem;
-    background-color: $violet;
+    background-color: $secondary-color;
     z-index: 1000;
     border: none;
     color: $background;
@@ -67,6 +77,11 @@
 .social-head p{
     text-align: center;
 }
+@media screen and (min-width: 851px) and (max-width:1080px) {
+    .title{
+        right: 5%;
+    }
+}
 @media screen and (max-width: 850px) {
     .scroll-top {
         bottom: 10rem;
@@ -89,5 +104,12 @@
         left: 50%;
         transform: translate(-50%, 0);
         width: 90%;
+    }
+    .title{
+        right: 50%;
+        transform: translate(50%, 0);
+        font-size: 36px;
+        width: 100%;
+        text-align: center;
     }
 }

@@ -45,10 +45,16 @@ export class AppComponent {
   }
   ngAfterViewInit() {
     setTimeout(() => {
-      let desc: HTMLElement = document.querySelector(".presentation-desc")!;
-      desc.style.opacity = "1";
-      desc.style.top = "50%";
+      let title: HTMLElement = document.querySelector(".title")!;
+      title.style.opacity = "1";
+      title.style.top = "8rem";
+
+      setTimeout(() => {
+        let desc: HTMLElement = document.querySelector(".presentation-desc")!;
+        desc.style.opacity = "1";
+        desc.style.transform = "translate(0,0)";
       },300);
+    },300)
   }
   goTo(page: string) {
 
